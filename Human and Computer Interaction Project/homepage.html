@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <div class="bgcontainer" id ="bgcontainer" hidden>
+        <p> </p>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="LC019 & LC020">
+        <title>Fancy Art | Home</title>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/homepage.js"></script>
+        <script src="js/navbar.js"></script>
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+
+    <div id="box" class="box" >
+        <form class="signinbox" id="signinbox" onSubmit="return login(this);" hidden>
+            <img class="logobox" src="asset/LOGO1.png"> 
+            <h1>FANCY ART</h1>
+            <input type="text" name="username" id="username" class="username" placeholder="username"/>
+            <input type="password" name="password" id="password" class="password" placeholder="password"/>
+            <button type="submit" class="login" >login</button>
+               
+        </form>
+     </div>
+
+    <div class="header" id ="header">
+        
+        <div class ="headercontainer"><img class="logo" src="asset/LOGO1.png"> 
+            <button class ="signin" id="signin" onclick="showbox()">SIGN IN</button>
+        </div>
+        
+    </div>
+
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+
+            <li class="galleries"><a href="gallery.html" >GALLERIES</a>
+                <ul class="galleries-content">
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="gallery.html#gallery">Arts</a></li>
+                </ul>
+            </li>
+
+            <li><a href="auction.html">AUCTION</a></li>
+
+            <li class = "aboutus"><a href="aboutus.html">ABOUT US</a>
+                <ul class="aboutus-content">
+                    <li><a href="aboutus.html#descAboutUs">Information</a></li>
+                    <li><a href="aboutus.html#history">History</a></li>
+                </ul>
+            </li>
+
+            <li><a href="register.html">REGISTER</a></li>     
+        </ul>
+    </div>
+
+    <div class = "container">
+ 
+
+        <div class= "content1" id ="content1">
+            <div id="imageSlider" >
+                   
+                <div id="Content1Container" class="Content1Container">
+                    <button id="left"><<</button>
+                    <div id="sliderContainer" class="sliderContainer">
+                        <div class="imgtxt" id="imgtxt">
+                            <div class="contentimgtxt">
+                                <h2>24 April - 8 July 2020</h2>
+                                <h2>----------------------------------</h2>
+                                <h1>Color in Cave</h1>
+                               <a href ="https://www.museummacan.org/cas/color-in-cave"> <button class="learnmore">LEARN MORE</button></a>
+                            </div>
+                        </div> 
+                        <div id="slides" class="slides">
+                            
+                        
+                            <img src="asset/homepage/content1image.jpg" class="active">
+                            <img src="asset/homepage/content1image2.jpg">
+    
+    
+                            <img src="asset/homepage/content1image3.jpeg">
+                        </div>
+                    </div>
+                    <button id="right">>></button>
+                </div>
+               
+            </div>
+
+        </div>
+
+        <div class="content2" id ="content2">
+            <p></p>
+            <div class="text2" id="text2">
+                <h1>Welcome to Fancy Art</h1>
+                <h2>Modern and contempory art through the lens of history</h2>
+                <a href="aboutus.html"><button id ="findout" class="findout">FIND OUT MORE</button></a>
+            </div>
+        </div>
+
+        <div class ="content3" id="content3">
+            <div class="eventgallery">
+                <img src="asset/homepage/box1image.png">
+                <h2>Geliat Art Fair</h2>
+                <p>How an art fair become a platform for all gallery and local artist to
+                    introduce Indonesia's art industry to the whole world
+                </p>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/homepage/foto.jpg">
+                <h2>Local Art Exhibition</h2>
+                <p>A collaboration art exhibition from our precious trio local artist,
+                    Ruth, Abshar and Sinta. This exhibition theme was 'Relieved'
+                </p>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/homepage/box3image.png">
+                <h2>Yayoi Kusuma Journey</h2>
+                <p>Yayoi Kusuma is a Japanese contemporary artist who works primarily
+                    in sclupture and installation, but is also active avtive in painting, gilm, arts, and etc.
+                </p>
+            </div>
+
+        </div>
+
+        <footer>
+            Fancy Art&copy;/ All Rights Reserved.
+        </footer>
+
+
+
+
+    </div>
+
+
+</html>

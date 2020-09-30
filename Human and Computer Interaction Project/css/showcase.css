@@ -1,0 +1,130 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bgcontainer{
+    width: 110%;
+    height: 110%;
+    background-color: black;
+    z-index: 150;
+    position: fixed;
+    opacity: 0.5;
+    margin:-10px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-gallery .img{
+    width: 690px;
+    margin: 0px auto 10px;
+    transition: all 0.2s ease;
+}
+
+.img-gallery .img:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.img-column {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.img-gallery img{
+    image-orientation: from-image;
+    max-width: 690px;
+}
+
+.gallery{ 
+    margin: 5px 20px 50px;
+}
+
+footer{
+    position: relative;
+    background-image:  url("../footerbackground.png");
+    background-position: bottom;
+    height:40px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.modal-body{
+    padding: 0px !important;
+}
+
+@media screen and (max-width: 1800px){
+    .img-gallery img{
+        max-width: 600px;
+    }
+    .img-gallery .img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1569px){
+    .img-gallery img{
+        max-width: 500px;
+    }
+    .img-gallery .img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1320px){
+    .img-gallery img{
+        max-width: 400px;
+    }
+    .img-gallery .img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1065px){
+    .img-gallery img{
+        max-width: 300px;
+    }
+    .img-gallery .img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .img-gallery img{
+        max-width: 200px;
+    }
+    .img-gallery .img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .img-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .img-gallery img{
+        max-width: 300px;
+    }
+    .img-gallery .img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .img-gallery img{
+        max-width: 200px;
+    }
+    .img-gallery .img{
+        width: 200px;
+    }
+}

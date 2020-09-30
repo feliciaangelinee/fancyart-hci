@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LC019 & LC020">
+    <title>Fancy Art | About Us</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/aboutus.js"></script>
+    <script src="js/homepage.js"></script>
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <div class="bgcontainer" id ="bgcontainer" hidden>
+        <p> </p>
+    </div>
+
+    <div id="box" class="box" >
+        <form class="signinbox" id="signinbox" onSubmit="return login(this);" hidden>
+            <img class="logobox" src="asset/LOGO1.png"> 
+            <h1>FANCY ART</h1>
+            <input type="text" name="username" id="username" class="username" placeholder="username"/>
+            <input type="password" name="password" id="password" class="password" placeholder="password"/>
+            <button type="submit" class="login" >login</button>
+               
+        </form>
+     </div>
+
+
+    <div class="header" id ="header">
+        
+        <div class ="headercontainer"><img class="logo" src="asset/LOGO1.png"> 
+            <button class ="signin" id="signin" onclick="showbox()">SIGN IN</button>
+        </div>
+        
+    </div>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+
+            <li class="galleries"><a href="gallery.html" >GALLERIES</a>
+                <ul class="galleries-content">
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="gallery.html#gallery">Arts</a></li>
+                </ul>
+            </li>
+
+            <li><a href="auction.html">AUCTION</a></li>
+
+            <li class = "aboutus"><a href="aboutus.html">ABOUT US</a>
+                <ul class="aboutus-content">
+                    <li><a href="aboutus.html#descAboutUs">Information</a></li>
+                    <li><a href="aboutus.html#history">History</a></li>
+                </ul>
+            </li>
+
+            <li><a href="register.html">REGISTER</a></li>     
+        </ul>
+    </div>
+
+    <div class="descAboutUs" id ="descAboutUs">
+        <h2>About Us</h2>
+        <p>Fancy Art is the world’s leading art gallery, connecting people with art and artists they love.
+            <br>
+            Fancy Art offers an unparalleled selection of paintings, drawings, sculpture and photography in a range of prices, and it provides artists from around the world with an expertly curated environment in which to exhibit and sell their work.
+            Based in Jakarta, Fancy Art is redefining the experience of buying and selling art by making it easy, convenient and welcoming for both collectors and artists.
+        </p>
+    </div>
+
+    <div class="prelocation">
+        <h2>Locations</h2>
+        <div class="line"></div>
+    </div>
+    <div class="location">
+        <div class="locs">
+            <img src="asset/aboutus/loc1.jpg">
+            <h2>AKR Tower</h2>
+            <p>Jalan Panjang No. 5 Kebon Jeruk 
+                <br>West Jakarta 11530, Indonesia
+                <br>Operating Hours: Open Daily 10.00 – 16.00
+            </p>
+        </div>
+        <div class="locs">
+            <img src="asset/aboutus/loc2.jpg">
+            <h2>Hammer Museum</h2>
+            <p>10899 Wilshire Blvd  
+                <br>Los Angeles, CA United States
+                <br>Operating Hours: Open Daily 11.00 – 16.00
+            </p>
+        </div>
+        <div class="locs">
+            <img src="asset/aboutus/loc3.jpg">
+            <h2>Museo del Greco</h2>
+            <p>Paseo Tránsito, s/n,  
+                <br>45002 Toledo, Spain
+                <br>Operating Hours: Open Daily 10.00 – 16.00
+            </p>
+        </div>
+        <div class="locs">
+            <img src="asset/aboutus/loc4.jpg">
+            <h2>The Domain</h2>
+            <p>Yurong Precinct Art Gallery Rd 
+                <br>Sydney, NSW 2000, Australia
+                <br>Operating Hours: Open Daily 09.00 – 18.00
+            </p>
+        </div>
+    </div>
+
+    <div class="history" id="history">
+        <div class="history2">
+            <h2>History</h2>
+            <p>Fancy Art is established in 1990 by its founder Aryanto Andikusumo with the idea of sharing his love 
+            for art with the people in Indonesia. 
+            <br>The first Fancy Art gallery opened in Jakarta, to this day holds its name as the largest art gallery 
+            in Southeast-Asia exhibiting various types of art from ancient to modern and contemporary art. 
+            Throughout time, with the evolution of art itself, Fancy Art expand it galleries throughout the entire world
+             with the purpose of connecting art and people. 
+            </p>
+        </div>
+
+        <div class="historyImg">
+            <img src="asset/aboutus/history.jpg" class="hisImage">
+            <div class="overlay">
+                <div class="text">Fancy Art Gallery<br>Largest in Southeast-Asia</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Fancy Art&copy;/ All Rights Reserved.
+    </footer>
+
+    
+</body>
+</html>

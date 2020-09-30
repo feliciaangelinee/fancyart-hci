@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Art - Art</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+    <div class="bgcontainer" id ="bgcontainer" hidden>
+        <p> </p>
+    </div>
+    <header>
+        <div class="header" id ="header">
+            <div class ="headercontainer"><img class="logo" src="asset/LOGO1.png"> 
+                <button class ="signin" id="signin" onclick="showbox()">SIGN IN</button>
+            </div>
+        </div>
+        
+        <div id="box" class="box" >
+            <form class="signinbox" id="signinbox" onSubmit="return login(this);" hidden>
+                <img class="logobox" src="asset/LOGO1.png"> 
+                <h1>FANCY ART</h1>
+                <input type="text" name="username" id="username" class="username" placeholder="username"/>
+                <input type="password" name="password" id="password" class="password" placeholder="password"/>
+                <button type="submit" class="login" >login</button>
+                   
+            </form>
+         </div>
+
+  
+         <div class="menu">
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+    
+                <li class="galleries"><a href="gallery.html" >GALLERIES</a>
+                    <ul class="galleries-content">
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="gallery.html#gallery">Arts</a></li>
+                    </ul>
+                </li>
+    
+                <li><a href="auction.html">AUCTION</a></li>
+    
+                <li class = "aboutus"><a href="aboutus.html">ABOUT US</a>
+                    <ul class="aboutus-content">
+                        <li><a href="aboutus.html#descAboutUs">Information</a></li>
+                        <li><a href="aboutus.html#history">History</a></li>
+                    </ul>
+                </li>
+    
+                <li><a href="register.html">REGISTER</a></li>     
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="highlight-container" id="highlight-container">
+            <div class="highlight-header">
+                <h1>This Week Spotlight - A Touch of Blue</h1>
+                <hr>
+                <div class="highlight-information">
+                    <p>Blue is everyone favorite color. It's the color for water and sky. Blue conveys a sense of trust, loyalty, cleanliness, and understanding.</p>
+                </div>
+            </div>
+            <div class="gallery-highlight">
+                <div class="img-highlight">
+                    <img src="asset/rawimg/art1.JPG" alt="">
+                    <div class="highlight-info">
+                        <h2>Teal and Pink Cherry Print Garment</h2>
+                        <span class="italic">eberhard grossgasteiger</span>
+                        <p>Cherries are grown as ornamentals for their profilic spring flowers, and the dark red wood of some cherry species is especially esteemed for the manufacture of fine furniture.</p>
+                    </div>
+                </div>
+                <div class="img-highlight">
+                    <img src="asset/rawimg/art2.JPG" alt="">
+                    <div class="highlight-info">
+                        <h2>Blue Lollipop</h2>
+                        <span class="italic">Somben Chea</span>
+                        <p>Lollipop is a type of sugar candy usually consisting of hard candy mounted on a stick and intended for sucking or licking.</p>
+                    </div>
+                </div>
+                <div class="img-highlight">
+                    <img src="asset/rawimg/art3.JPG" alt="">
+                    <div class="highlight-info">
+                        <h2>Photo of Skeleton</h2>
+                        <span class="italic">Engin Akyurt</span>
+                        <p>The skeleton is the body part that provides support, shape, and protection to the soft tissues and delicate organs of animals. The term comes from Greek σκελετός (skeletós), meaning 'dried up'.</p>
+                    </div>
+                </div>
+                <div class="img-highlight">
+                    <img src="asset/rawimg/art4.JPG" alt="">
+                    <div class="highlight-info">
+                        <h2>Close-up of a Siamese Fighting Fish</h2>
+                        <span class="italic">Chevanon</span>
+                        <p>The Siamese fighting fish, also knowwn as the 'betta', is a popular fish in the aquarium trade. Bettas are a member of the gourami family and are known to be highly territorial. Betta fish are native to Asia, where they live in the shallow matter of marshes, ponds, or slow-moving streams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery" id="gallery"> 
+            <div class="gallery-header">
+                <h1>Gallery</h1>
+                <hr>
+            </div>
+            <div class="img-gallery">
+                <div class="img-column">
+                    <div class="img">
+                        <img src="asset/rawimg/art4.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Close-up of a Siamese Fighting Fish</h3>
+                            <p class="italic">Chevanon</p>
+                            <span>Thailand</span>
+                            <input type="hidden" value="Illustration">
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="asset/rawimg/art2.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Blue Lollipop</h3>
+                            <p class="italic">Somben Chea</p>
+                            <span>Canada</span>
+                            <input type="hidden" value="Phootography">
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="asset/rawimg/art3.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Photo of Skeleton</h3>
+                            <p class="italic">Engin Akyurt</p>
+                            <span>Turkey</span>
+                            <input type="hidden" value="Photography">
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="img-column">
+                    <div class="img">
+                        <img src="asset/rawimg/art1.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Teal and Pink Cherry Print Garment</h3>
+                            <p class="italic">eberhard grossgasteiger</p>
+                            <span>United states of America</span>
+                            <input type="hidden" value="Garment">
+                        </div>
+                    </div>     
+                    <div class="img">
+                        <img src="asset/rawimg/art5.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Three Women Wearing Turbands</h3>
+                            <p class="italic">Dazzle Jam</p>
+                            <span>Uganda</span>
+                            <input type="hidden" value="Photography">
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="asset/rawimg/art6.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Man Digital Illustration</h3>
+                            <p class="italic">Francesco Ungaro</p>
+                            <span>Milan</span>
+                            <input type="hidden" value="Illustration">
+                        </div>
+                    </div>
+          
+                </div>
+                <div class="img-column">
+                    <div class="img">
+                        <img src="asset/rawimg/art7.JPG" alt="">
+                        <div class="img-info">
+                            <h3>Woman Statue</h3>
+                            <p class="italic">Zack Jarosz</p>
+                            <span>Orlando</span>
+                            <input type="hidden" value="Statue">
+                        </div>
+                    </div>     
+                    <div class="img">
+                        <img src="asset/rawimg/art8.JPG" alt="">
+                        <div class="img-info">
+                            <h3>People Covered With Yellow and Pink Powder</h3>
+                            <p class="italic">Yogendra Singh</p>
+                            <span>Nepal</span>
+                            <input type="hidden" value="Photography">
+                        </div>
+                    </div>
+      
+          
+                </div>
+                <div class="img-column" id="show-for-media">
+
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="asset/rawimg/art2.JPG" id="modal-img">
+            <h2></h2>
+            <span></span>
+            <p>Info</p>
+        </div>
+    </div>
+  
+</div>
+<script src="js/gallery.js"></script> 
+
+<footer>
+    Fancy Art&copy;/ All Rights Reserved.
+</footer>
+</html>

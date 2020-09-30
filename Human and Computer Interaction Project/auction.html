@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <div class="bgcontainer" id ="bgcontainer" hidden>
+        <p> </p>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="LC019 & LC020">
+        <title>Fancy Art | Home</title>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/auction.js"></script>
+        <script src="js/navbar.js"></script>
+        <link rel="stylesheet" href="css/auction.css">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+
+    <div id="box" class="box" >
+        <form class="signinbox" id="signinbox" onSubmit="return login(this);" hidden>
+            <img class="logobox" src="asset/LOGO1.png"> 
+            <h1>FANCY ART</h1>
+            <input type="text" name="username" id="username" class="username" placeholder="username"/>
+            <input type="password" name="password" id="password" class="password" placeholder="password"/>
+            <button type="submit" class="login" >login</button>
+               
+        </form>
+     </div>
+
+    <div class="header" id ="header">
+        
+        <div class ="headercontainer"><img class="logo" src="asset/LOGO1.png"> 
+            <button class ="signin" id="signin" onclick="showbox()">SIGN IN</button>
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+
+            <li class="galleries"><a href="gallery.html" >GALLERIES</a>
+                <ul class="galleries-content">
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="gallery.html#gallery">Arts</a></li>
+                </ul>
+            </li>
+
+            <li><a href="auction.html">AUCTION</a></li>
+
+            <li class = "aboutus"><a href="aboutus.html">ABOUT US</a>
+                <ul class="aboutus-content">
+                    <li><a href="aboutus.html#descAboutUs">Information</a></li>
+                    <li><a href="aboutus.html#history">History</a></li>
+                </ul>
+            </li>
+
+            <li><a href="register.html">REGISTER</a></li>     
+        </ul>
+    </div>
+    <div class = "container">
+ 
+
+    
+
+        <div class="content1" id ="content1">
+            <p></p>
+            <div class="text2" id="text2">
+                <h1>Ongoing Auction</h1>
+                <h2>24 April - 24 June 2020</h2>
+                
+            </div>
+        </div>
+
+        <div class ="content2" id="content2">
+            <div class="eventgallery">
+                <img src="asset/auction/foto1.jpg">
+                <h2>Apocalypse</h2>
+                <p>Apocalypse is original sketch by KEITH HARING
+                    <br>Published by George Mulder Fine Arts, New York<br>
+                    Sheet: 37 x 37 in. (962 x 962 mm.)<br><br>
+                </p>
+                <div class="bidding">
+                    <h3>
+                        Starting Price : USD 5,000 <br>
+                        Bidding Multiplication: USD 0,500 <br>
+                        Code : AP962 <br>
+                        Current Bid : 8,000<br>
+                        Contact Email : Fancyartjkt@gmail.com
+                    </h3>
+                </div>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/auction/foto2.jpg">
+                <br><br><br><br><br><h2>Lithograph</h2>
+                <p>Lithograph is original sketch by KEITH HARING
+                    <br>Published by Barbara Gladstone Editions, New York<br>
+                    Sheet: 25 x 36 in. (641 x 918 mm.)<br><br><br>
+                </p>
+                <div class="bidding">
+                    <h3>
+                        Starting Price : USD 7,000 <br>
+                        Bidding Multiplication: USD 1,000 <br>
+                        Code : LI641 <br>
+                        Current Bid : 15,000<br>
+                        Contact Email : Fancyartjkt@gmail.com
+                    </h3>
+                </div>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/auction/foto3.jpg">
+                <h2>Marilyn Monroe (Marilyn)</h2>
+                <p>Marilyn Monroe is original sketch by ANDY WARHOL
+                    <br>Published by Factory Additions, New York<br>
+                    Sheet: 36 x 36 in. (914 x 914 mm.)
+                </p>
+                <div class="bidding">
+                    <h3>
+                        Starting Price : USD 50,000 <br>
+                        Bidding Multiplication: USD 1,500 <br>
+                        Code : MM941 <br>
+                        Current Bid : 83,000<br>
+                        Contact Email : Fancyartjkt@gmail.com
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+
+       -->
+
+        <div class ="content2" id="content2">
+            <div class="eventgallery">
+                <img src="asset/auction/foto4.jpg">
+                <h2>Study of Hands</h2>
+                <p>Study of Hands is original sketch by ROY LICHTENSTEIN
+                    <br>Published by Castelli Graphics, New York<br>
+                    Sheet: 31 x 32 in. (797 x 826 mm.)
+                </p>
+                <div class="bidding">
+                    <h3>
+                        Starting Price : USD 1,000 <br>
+                        Bidding Multiplication: USD 0,500 <br>
+                        Code :  SOH797 <br>
+                        Current Bid : 7,500<br>
+                        Contact Email : Fancyartjkt@gmail.com
+                    </h3>
+                </div>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/auction/foto5.jpg">
+                <h2><br>Still Life with Liz</h2>
+                <p>Still Life with Liz is original sketch by TOM WESSELMANN
+                    <br>Published by International Images Inc., Putney, Vermont<br>
+                    Sheet: 59 x 57 in. (1511 x 1451 mm.)
+                </p>
+                <div class="bidding">
+                    <h3>
+                        Starting Price : USD 5,000 <br>
+                        Bidding Multiplication: USD 1,000 <br>
+                        Code : SL151 <br>
+                        Current Bid : 14,000<br>
+                        Contact Email : Fancyartjkt@gmail.com
+                    </h3>
+                </div>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/auction/foto6.jpg">
+                <h2>Droopy Dog </h2>
+                <p>Droopy Dog is original sketch by GEORGE CONDO
+                    <br>Published by Art + Culture, Brooklyn<br>
+                    Sheet: 18 x 16 in. (457 x 406 mm.)
+                </p>
+                <div class="bidding">
+                <h3>
+                    Starting Price : USD 2,000 <br>
+                    Bidding Multiplication: USD 0,500 <br>
+                    Code : DD457 <br>
+                    Current Bid : 12,500<br>
+                    Contact Email : Fancyartjkt@gmail.com
+                </h3>
+                </div>
+            </div>
+
+        </div>
+
+    
+
+        <div class="upcomingcon" id ="upcomingcon">
+            <p></p>
+            <div class="upcoming" id="upcoming">
+                <h1>Upcoming Auction</h1>
+                <h2>25 June - 8 July 2020</h2>
+                
+            </div>
+        </div>
+
+        <div class ="content2" id="content2">
+            <div class="eventgallery">
+                <img src="asset/auction/foto7.jpg">
+                <h2>Les Mauvais médecins (The Bad Doctors)</h2>
+                <p>The Bad Doctors is original sketch by JAMES ENSOR
+                    <br>Published by Japon paper, France<br>
+                    Sheet: 11 x 15 in. (292 x 403 mm.)
+                </p>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/auction/foto9.jpg">
+                <h2>Die Frauen und das Gerippe</h2>
+                <p>Die Frauen und das Gerippe is original sketch by EDVARD MUNCH
+                    <br>Published by Felsing, Berlin<br>
+                    Sheet: 17 x 23 in. (439 x 589 mm.)
+                </p>
+            </div>
+            <div class="eventgallery">
+                <img src="asset/auction/foto8.jpg">
+                <h2>Les Vieux polissons (The Old Scamps)</h2>
+                <p>Les Vieux polissons is original sketch by JAMES ENSOR
+                    <br>Published by Japon paper, France<br>
+                    Sheet: 9 x 11 in. (237 x 295 mm.)
+                </p>
+            </div>
+
+        </div>
+
+        <footer>
+            Fancy Art&copy;/ All Rights Reserved.
+        </footer>
+
+
+
+
+    </div>
+
+
+</html>

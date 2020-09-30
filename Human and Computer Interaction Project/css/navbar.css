@@ -1,0 +1,370 @@
+@media screen and (min-width:800px){ 
+    /*SIGN IN POP UP BOX*/
+    input[type=text],input[type=password]{
+       
+        display:block;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding:5px 150px 5px 3px;
+        box-shadow:inset rgba(38,39,42,0.09) 0 1px 4px;
+    
+      }
+    input[type=submit]{
+        display:block;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding:5px 10px 5px 10px;
+        box-shadow:inset rgba(38,39,42,0.09) 0 1px 4px;
+    }
+    .box{
+        z-index: 200;
+        margin-top: 100px;
+        /* margin-left: 350px; */
+        position: fixed;
+        display: block;
+        left: 25%;
+    }
+    .box h1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .signinbox{
+        background-image: url("navbar/content2background.png");
+        background-size: 100%;
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 2px;
+        padding:20px 200px 20px 200px;
+        background-color: #d9d6d1;
+       
+      }
+      .logobox{
+        float: left;
+      margin-left: 10px;
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+    
+    }
+      /*header*/
+    .header{
+        background-image: url("navbar/headerbackground.png");
+        background-size: 100% ;
+        height: 150px;
+        background-repeat: no-repeat;
+        color: black;
+ 
+ 
+    }
+    .headercontainer{
+        display: inline-block; 
+        float: right;
+        width: 55%;
+    
+   
+    }
+    .signin{  
+        float: right;
+        padding: 10px;
+        border-width: 30px;
+        margin-right: 60px;
+        margin-top:35px ;
+        font-size: 12pt;
+        border: black;
+        border-style: solid;
+        border-radius: 20px;
+    }
+  
+    .logo{
+        float: left;
+      margin-left: 10px;
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+    
+    }
+    /*NAVBAR*/
+
+    .menu{
+        color: black;
+        min-height: 10px;
+        justify-content: left;
+
+     
+       
+    } 
+    .menu  ul{   /*tempat naro list*/
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        
+        margin-left: -40px;
+
+    } 
+    
+    .menu li{ /*list = tempat taro daftar*/
+        
+        list-style: none; 
+        background-color: white;
+        padding: 20px 0px ;
+        width: 25%; /*setiap list punya tempat 25%*/
+    
+    }
+    .menu li:hover{
+        /*kita hovernya di tempat naro daftar = di list
+        jadi kotak pink perdaftar yg ke hover*/
+       background-color:#d9d6d1;
+    }
+    .menu a{ /*daftar*/
+        color: black;
+        text-decoration : none;
+        letter-spacing: 2px; /*spasi antar huruf*/
+        padding: 20px 30px; 
+      
+    }
+  
+
+    .menu .galleries-content{
+        display: none;
+        position: absolute;
+        text-align: left;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        margin-top: 20px;
+        width: 78%;
+
+      
+    }
+    .galleries:hover .galleries-content{
+        position: absolute;
+        display: block;
+        z-index: 100;
+    }  
+    .menu .aboutus-content{
+        display: none;
+        position: absolute;
+        text-align: left;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        margin-top: 20px;
+        width: 78%;
+    }
+    .aboutus:hover .aboutus-content{
+        display: block;
+        position: absolute;
+        z-index: 100;
+    }  
+    footer{
+        position: relative;
+        background-image:  url("navbar/footerbackground.png");
+        background-position: bottom;
+        height:40px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        background-size: 100%;
+        width: 100%;
+        text-align: center;
+   
+     
+    }
+}
+
+
+
+@media screen and (max-width:800px){ 
+    #container{
+        min-height: 97vh;
+   
+        display: block;
+        position: relative;
+        
+    }
+ 
+    /*SIGN IN POP UP BOX*/
+  
+    input[type=text],input[type=password]{
+       
+        display:block;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding:3px 100px 3px 3px;
+        box-shadow:inset rgba(38,39,42,0.09) 0 1px 4px;
+    
+      }
+    input[type=submit]{
+        display:block;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding:5px 10px 5px 10px;
+        box-shadow:inset rgba(38,39,42,0.09) 0 1px 4px;
+    }
+    .box{
+        z-index: 200;
+        margin-top: 100px;
+        /* margin-left: 350px; */
+        position: fixed;
+        display: block;
+        left: 15%;
+    }
+    
+    .box h1{
+        font-size: 15pt;
+        margin-top:30px;
+        margin-left: 60px;
+    }
+    .logobox{
+        float: left;
+        /* margin-left: 10px;
+        margin-top: 10px; */
+        height: 80px;
+        width: 80px;
+        margin-bottom: 10px;
+       
+    
+    }
+    .signinbox{
+        background-image: url("navbar/content2background.png");
+        background-size: 100%;
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 2px;
+        padding:10px 50px 10px 50px;
+        background-color: #d9d6d1;
+
+       
+      }
+
+      /*header*/
+      .header{
+        background-image: url("navbar/headerbackground.png");
+        background-size: 100% ;
+        height:100px;
+        background-repeat: no-repeat;
+       
+        text-align: center;
+ 
+ 
+    }
+    .signin{  
+        float: right;
+        padding: 10px;
+        border-width: 20px;
+        margin-right: 20px;
+        margin-top:35px ;
+        font-size: 8pt;
+        border: black;
+        border-style: solid;
+        border-radius: 20px;
+    }
+  
+    .logo{
+        /* float: left; */
+        margin-left: 100px;
+        margin-top: 10px;
+        height: 80px;
+        width: 80px;
+    
+    }
+
+
+    /*navbar*/
+
+    .menu{
+        min-height: 300px;
+        z-index: 200;
+    }
+    .menu ul{
+        height: auto;
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        
+    }
+    .menu ul li{ 
+        list-style: none;
+        width: 100%;
+        padding: 40px 0px 40px 0px;
+    
+        margin : 0px 0px;
+     
+
+        /* margin: 2% 5%; */
+     /*margin : top&bottom left&right*/
+    
+    }
+    .menu a{
+        color:black;
+        text-decoration : none;
+        letter-spacing: 3px; /*spasi antar huruf*/
+        margin: 20;
+    
+    }
+
+    .menu li:hover{
+        /*kita hovernya di tempat naro daftar = di list
+        jadi kotak pink perdaftar yg ke hover*/
+       background-color:#d9d6d1;
+    }
+    .menu .galleries-content{
+        display: none;
+        position: absolute;
+        text-align: left;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        margin-top: 20px;
+        width: 100%;
+       
+ 
+      
+    }
+
+    
+    .galleries:hover .galleries-content{
+        position: relative;
+        display: block;
+        z-index: 100;
+  
+
+    }  
+    .galleries-content li:hover  a{
+   
+        color:#7f0c15;
+
+    }  
+  
+    .menu .aboutus-content{
+        display: none;
+        position: absolute;
+        text-align: left;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        margin-top: 20px;
+        width: 130%;
+        
+    }
+    .aboutus:hover .aboutus-content{
+        display: block;
+        position: relative;
+        z-index: 100;
+    }  
+    .aboutus-content li:hover  a{
+ 
+        color:#7f0c15;
+
+    }  
+    footer{
+        position: relative;
+        background-image:  url("navbar/footerbackground.png");
+        background-position: bottom;
+      background-repeat: no-repeat;
+        height:40px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        background-size: 100%;
+        width: 100%;
+        text-align: center;
+
+     
+    }
+}

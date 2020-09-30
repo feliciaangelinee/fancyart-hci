@@ -1,0 +1,372 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: auto;
+    
+}
+.bgcontainer{
+    width: 110%;
+    height: 110%;
+    background-color: black;
+    z-index: 150;
+    position: fixed;
+    opacity: 0.5;
+    margin:-10px;
+}
+
+
+@media screen and (min-width:800px){ 
+
+
+
+    /*content1*/
+    .content1{
+        position: relative;
+    }
+    #sliderContainer{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    
+
+    #slides{
+       
+        /* background-color: red; */
+         position: relative; 
+       
+        /* float: left; */
+        /* padding: 3px; */
+    }
+    
+    #slides img{
+        /*biar foto yg lain, selain foto pertama ga keliatan dulu*/
+        display: none;
+        width:100%;
+        height: 700px;
+    }
+    
+    #slides img.active{
+        
+        display:inline-block;
+    }
+    
+
+    .contentimgtxt {
+        margin-top: 200px;
+        letter-spacing: 4px;
+        font-size: 20pt;
+  
+    }
+
+    #sliderContainer:hover .imgtxt{
+        position: absolute;
+        display: block; 
+    }
+    #imgtxt{
+        z-index: 90;
+        position: absolute;
+        opacity: 0.7;
+        background-color: black;
+        height: 700px;
+        color: beige;
+        transition: .5s ease;
+        /* margin-top: -700px; */
+        width: 100%;
+        font-style: normal;
+        display: none;
+     
+    
+    } 
+
+    #imgtxt .learnmore{
+        color: white;
+        padding: 20px 30px;
+        background-color: black;
+        border: white;
+        border-style: solid;
+    }
+
+    #left, #right{
+        position: absolute;
+      
+        cursor: pointer;
+        font-size: 20pt;
+        top:50%;
+        margin-top: -20px;
+        
+    }
+    
+    #left{
+        left: 30px;
+        /*z-index makin tinggi, si itemnya bakal makin diatas. kalau dia ditumpuk sama item lain
+        z-index terttinggi bakal paling atas*/
+        z-index: 100;
+    }
+    
+    #right{
+        right: 30px;
+        z-index: 100;
+    }
+
+
+    /*content2*/
+    .content2{
+        background-image: url("navbar/content2background.png");
+        background-size: 100% ;
+        height:700px;
+        text-align: center;
+        width: 100%;
+     
+    }
+
+    .text2 h1{
+        margin-top: 200px;
+        font-size: 80pt;
+  
+    }
+    .text2 h2{
+        font-size: 20pt;
+
+    }
+
+    .findout{
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        padding: 30px;
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    /*content3*/
+    .content3{
+  
+     
+    }
+    .eventgallery{
+        width: 30%;
+        border-style: solid;
+        border-color: black;
+        float: left;
+        margin: 15px;
+    }
+
+    .eventgallery img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .eventgallery h2{
+        letter-spacing: 2pt;
+        margin: 5px;
+        font-size: 20pt;
+  
+      }
+
+    .eventgallery p{
+       
+        margin: 5px;
+      }
+
+    footer{
+        position: relative;
+        background-image:  url("asset/footerbackground.png");
+      
+        background-position: bottom;
+        height:40px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        background-size: 100%;
+        width: 100%;
+        text-align: center;
+
+     
+    }
+
+}
+    
+
+
+
+
+@media screen and (max-width:800px){ /*tampilan kalau website di kecilin*/
+   
+    #container{
+        min-height: 97vh;
+   
+        display: block;
+        position: relative;
+        
+    }
+   
+
+    /*content1*/
+    .content1{
+        position: relative;
+    }
+    #sliderContainer{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    
+
+    #slides{
+
+         position: relative; 
+       
+    }
+    
+    #slides img{
+        /*biar foto yg lain, selain foto pertama ga keliatan dulu*/
+        display: none;
+        width:100%;
+        height: 350px;
+    }
+    
+    #slides img.active{
+        
+        display:inline-block;
+    }
+    
+
+    .contentimgtxt {
+        margin-top: 100px;
+        letter-spacing: 4px;
+        font-size: 10pt;
+  
+    }
+
+    #sliderContainer:hover .imgtxt{
+        position: absolute;
+        display: block; 
+    }
+    #imgtxt{
+        z-index: 90;
+        position: absolute;
+        opacity: 0.7;
+        background-color: black;
+        height: 350px;
+        color: beige;
+        transition: .5s ease;
+        /* margin-top: 10px;  */
+        width: 100%;
+        font-style: normal;
+        display: none;
+     
+    
+    } 
+
+    #imgtxt .learnmore{
+        color: white;
+        padding: 10px 15px;
+        background-color: black;
+        border: white;
+        border-style: solid;
+    }
+
+    #left, #right{
+        position: absolute;
+        cursor: pointer;
+        font-size: 14pt;
+        top:50%;
+        margin-top: -20px;
+        
+    }
+    
+    #left{
+        left: 30px;
+        /*z-index makin tinggi, si itemnya bakal makin diatas. kalau dia ditumpuk sama item lain
+        z-index terttinggi bakal paling atas*/
+        z-index: 100;
+    }
+    
+    #right{
+        right: 30px;
+        z-index: 100;
+    }
+
+    .content2{
+        background-image: url("navbar/content2background.png");
+        background-size: 100% ;
+        height:700px;
+        text-align: center;
+        width: 100%;
+     
+    }
+
+    .text2 h1{
+        margin-top: 100px;
+        font-size: 60pt;
+  
+    }
+    .text2 h2{
+        font-size: 15pt;
+
+    }
+
+    .findout{
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        padding: 30px;
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    /*content3*/
+    .content3{
+  
+     
+    }
+    .eventgallery{
+        width: 27%;
+        border-style: solid;
+        border-color: black;
+        float: left;
+        margin: 12px;
+    }
+
+    .eventgallery img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .eventgallery h2{
+        letter-spacing: 2pt;
+        margin: 5px;
+        font-size: 20pt;
+        overflow: hidden;
+  
+      }
+
+    .eventgallery p{
+       
+        margin: 5px;
+      }
+
+    footer{
+        position: relative;
+        background-image:  url("asset/footerbackground.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height:40px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        background-size: 100%;
+        width: 100%;
+        text-align: center;
+
+     
+    }
+  
+
+}
